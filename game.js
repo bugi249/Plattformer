@@ -73,7 +73,7 @@ class GameScene extends Phaser.Scene {
         this.load.image('ground', 'assets/ground.png');
         this.load.image('obstacle', 'assets/obstacle.png');
         this.load.image('coin', 'assets/coin.png');
-        this.load.spritesheet('player', 'assets/player_sheet.png', { frameWidth: 32, frameHeight: 48 });
+        this.load.spritesheet('player', 'assets/player_sheet.png', { frameWidth: 60, frameHeight: 50 });
     }
 
     // `create` baut das Spiel auf
@@ -144,3 +144,4 @@ class GameScene extends Phaser.Scene {
     hitObstacle(player, obstacle) {
         this.physics.pause();
         player.setTint(0xff0000);
+
